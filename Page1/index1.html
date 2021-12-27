@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style1.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=bcdcd57d-875d-4b3a-9385-d3a3ee51eadd&lang=ru_RU"
+		type="text/javascript">
+		</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="../Page1/index1.html"><img id="logo" height="73" src="../images/logo.png"
+					alt="The picture was not found"></a>
+			<center><a href="../Page1/index1.html"><span class="menu" id="here">Home</span></a>
+				<a href="../Page2/index2.html"><span class="menu">News</span></a>
+				<a href="../Page3/index3.html"><span class="menu">Shop</span></a>
+				<a href="../Page4/index4.html"><span class="menu">Aliens</span></a>
+				<a href="../Page5/index5.html"><span class="menu">Universe</span></a>
+				<a href="../Registration/index.html"><span class="menu">Registration</span></a>
+			</center>
+			<div class="dropdown">
+				<button class="dropbutton">Planets</button>
+				<div class="dropelements">
+					<a href="../Blog1/index_b1.html">Mercury</a>
+					<a href="../Blog2/index_b2.html">Venus</a>
+					<a href="../Blog3/index_b3.html">Earth</a>
+					<a href="../Blog4/index_b4.html">Mars</a>
+					<a href="../Blog5/index_b5.html">Jupiter</a>
+					<a href="../Blog6/index_b6.html">Saturn</a>
+					<a href="../Blog7/index_b7.html">Uranus</a>
+					<a href="../Blog8/index_b8.html">Neptune</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="big_img">
+		<h1>Welcome to SpaceN</h1>
+	</div>
+
+	<div id="registration">
+		<a href="../Registration/index.html">
+			<h2>Registration</h2>
+		</a>
+	</div>
+
+	<div id="latest_news">
+		<h2>LATEST NEWS</h2>
+		<hr>
+		<h5>OCTOBER 14, 2021</h5>
+		<h3>The fifth launch of the "Union-2.1B" rocket</h3>
+		<a target="_blank"
+			href="https://rg.ru/2021/10/11/reg-dfo/raketu-soiuz-21b-ustanovili-na-startovom-stole-kosmodroma-vostochnyj.html"><button
+				class="read_more">READ
+				MORE</button></a>
+	</div>
+
+	<div id="about">
+		<p class="smallTitle">History</p>
+		<h2 class="usualTitle2">About Company</h2>
+		<img src="../images/company.jpg" alt="The picture was not found">
+		<div class="history" id="histoty1">
+			<center>
+				<h2 class="usualTitle1" id="title2020_2021">2020</h2>
+				<p id="word2020_2021">2020 is the year of the company's foundation. This is the most important moment for
+					our
+					company,
+					because
+					that year the whole world learned about our company. Although there were few buyers in 2020, they were
+					all satisfied.</p>
+				<button onclick="year2020()" id="btn2020" class="change btn2"></button>
+				<button onclick="year2021()" id="btn2021" class="change btn2"></button>
+			</center>
+		</div>
+	</div>
+
+	<div>
+		<div id="persons">
+			<h2 class="usualTitle3">Our customers</h2>
+			<p>All our customers are always satisfied with the purchase, and we are proud of it. Our company has 98%
+				positive reviews. Such celebrities as Dwayne Johnson, Joe Biden, Will Smith, Robert Downey Jr, Justin
+				Beiber, Yessenov Nurdaulet and so
+				on bought cars from us.</p>
+			<button class="btn2">Learn more</button>
+		</div>
+		<div class="famous">
+			<img src="../images/person1.jpg" width="300px" height="200px" alt="The picture was not found">
+			<img src="../images/person2.jpg" width="300px" height="200px" alt="The picture was not found">
+		</div>
+	</div>
+
+	<div id="aboutUs">
+		<h2 class="usualTitle2">About Company</h2>
+		<div class="infa">
+			<h2 class="usualTitle4 _anim_counter1">0</h2>
+			<p>HAPPY CLIENTS</p>
+		</div>
+		<div class="infa">
+			<h2 class="usualTitle4 _anim_counter2">0</h2>
+			<p>CARS</p>
+		</div>
+		<div class="infa">
+			<h2 class="usualTitle4 _anim_counter3">0</h2>
+			<p>EMPLOYEES</p>
+		</div>
+		<div class="infa">
+			<h2 class="usualTitle4 _anim_counter4">0</h2>
+			<p>Working days</p>
+		</div>
+	</div>
+
+	<footer>
+		<div>
+			<div class="foot_block">
+				<hr id="line2" noshade="">
+				<h4>Kazakhstan</h4>
+				<p class="foot_content">New cars:<span class="blue"> +7-(747)-231-9783</span></p>
+				<p class="foot_content">Service:<span class="blue"> +7-(705)-702-4512</span></p>
+				<p class="foot_content">Spare parts:<span class="blue"> +7-(747)-231-9783</span></p>
+				<p class="foot_content">Developer:<span class="blue"> FIKSIKI TEAM</span></p>
+				<a target="_blank" href="https://www.instagram.com/yesssenov/"><img src="../images/insta.png" class="icons"
+						alt="The picture was not found"></a>
+				<a target="_blank" href="https://www.facebook.com/profile.php?id=100048432167636"><img
+						src="../images/facebook.png" class="icons" alt="The picture was not found"></a>
+				<a target="_blank" href="https://wa.me/87472319783"> <img src="../images/whatsapp.png" class="icons"
+						alt="The picture was not found"></a>
+			</div>
+			<div class="foot_block">
+				<hr id="line2" noshade="">
+				<h4>Opening hours</h4>
+				<p class="foot_content">Monday: 09:00 - 19:00</p>
+				<p class="foot_content">Tuesday: 09:00 - 19:00</p>
+				<p class="foot_content">Wednesday: 09:00 - 19:00</p>
+				<p class="foot_content">Thursday: 09:00 - 19:00</p>
+				<p class="foot_content">Friday :<span class="blue"> 09:00 - 20:00</span></p>
+				<p class="foot_content">Saturday: 09:00 - 18:00</p>
+				<p class="foot_content">Sunday: 09:00 - 18:00</p>
+			</div>
+			<div class="foot_block">
+				<hr id="line2" noshade="">
+				<h4>Where are we located</h4>
+				<p class="foot_content">Almaty Manasa street </p>
+				<div id="map"></div>
+			</div>
+		</div>
+		<div>
+			<hr id="line3" noshade="">
+			<span class="lastinfa">&copy; 2021 FIKSIKI - official dealer</span>
+			<a href="#" class="lastinfa"><span>Contacts</span></a>
+			<a href="#" class="lastinfa"><span>Data protection</span></a>
+			<a href="#" class="lastinfa"><span>Legal information</span></a>
+			<a href="#here" class="lastinfa"><span>Up&#9650;</span></a>
+		</div>
+	</footer>
+	<script src="../js/scriptMap.js"></script>
+	<script src="../js/change.js"></script>
+</body>
+
+</html>

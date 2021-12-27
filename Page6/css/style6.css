@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+header {
+	margin-top: -73px;
+	position: fixed;
+	background-color: black;
+	height: 84px;
+	width: 101%;
+	box-shadow: 0 13px 4px -9px rgba(207, 207, 207, 0.4);
+	z-index: 1;
+	margin-left: -8px;
+}
+#logo {
+	padding: 6px;
+}
+a {
+	text-decoration: none;
+}
+.menu {
+  color: #777777; 
+  background: black; 
+  padding: 25.6px;
+  position: relative; bottom: 57px;	
+  font-family: 'Comfortaa', cursive;
+ 	font-size: 22px;
+ 	margin-left: -6px;
+}
+.menu:after {
+	display: block; /*блок элемента*/
+	position: absolute; /*абсолютная позиция*/
+	left: 0; /*направление подчеркивания*/
+	width: 0;/*длинна линии до наведения курсора*/
+	height: 2px; /*ширина линии*/
+	background-color: white; /*цвет линии*/
+	content: ""; /*отстутвует*/
+	transition: 0.7s; /*задаём время анимации*/
+}
+.menu:hover:after,.menu:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.menu:hover {
+   color: white;
+   transition: 0.7s;
+}
+#here {
+	color: white;
+}
+.dropbutton {
+  color: white; 
+  background: black; 
+  padding: 25.6px; 
+  transition: 0.2s linear; 	
+  font-family: 'Comfortaa', cursive;
+ 	font-size: 22px;
+ 	border: none;
+ 	position: relative; left: 1375px; bottom: 105.5px;
+}
+.dropdown {
+    position: relative;/*длина элементов будет относительно этой*/
+    display: inline-block;/*Только при наведении на элемент*/
+}
+.dropelements {
+    display: none;
+    position: relative; left: 1376px; bottom: 105.5px;
+ 	 width: 100%;
+    box-shadow: 3px 5px 11px 0px rgba(207, 207, 207, 0.4);
+    z-index: 1;
+}
+.dropelements a {
+    color: white; 
+    background: black; 
+    padding: 8px; 	
+	 font-family: 'Comfortaa', cursive;
+   	font-size: 20px;
+    display: block;
+}
+.dropelements a:hover {
+	background-color: white;
+	color: black;
+	transition: 0.3s;
+	border: 2px solid #094D74;
+}
+.dropdown:hover .dropelements {
+	display: block;
+}
+.dropdown:hover .dropbutton {
+	color: black; /**/
+  background: white; /**/
+  transition: 0.5s;
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+header {
+	margin-top: -73px;
+	position: fixed;
+	background-color: black;
+	height: 84px;
+	width: 101%;
+	box-shadow: 0 13px 4px -9px rgba(207, 207, 207, 0.4);
+	z-index: 1;
+	margin-left: -8px;
+}
+#logo {
+	padding: 6px;
+}
+a {
+	text-decoration: none;
+}
+.menu {
+  color: #777777; 
+  background: black; 
+  padding: 25.6px;
+  position: relative; bottom: 57px;	
+  font-family: 'Comfortaa', cursive;
+ 	font-size: 22px;
+ 	margin-left: -6px;
+}
+.menu:after {
+	display: block; /*блок элемента*/
+	position: absolute; /*абсолютная позиция*/
+	left: 0; /*направление подчеркивания*/
+	width: 0;/*длинна линии до наведения курсора*/
+	height: 2px; /*ширина линии*/
+	background-color: white; /*цвет линии*/
+	content: ""; /*отстутвует*/
+	transition: 0.7s; /*задаём время анимации*/
+}
+.menu:hover:after,.menu:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.menu:hover {
+   color: white;
+   transition: 0.7s;
+}
+#here {
+	color: white;
+}
+.dropbutton {
+  color: white; 
+  background: black; 
+  padding: 25.6px; 
+  transition: 0.2s linear; 	
+  font-family: 'Comfortaa', cursive;
+ 	font-size: 22px;
+ 	border: none;
+ 	position: relative; left: 1375px; bottom: 105.5px;
+}
+.dropdown {
+    position: relative;/*длина элементов будет относительно этой*/
+    display: inline-block;/*Только при наведении на элемент*/
+}
+.dropelements {
+    display: none;
+    position: relative; left: 1376px; bottom: 105.5px;
+ 	 width: 100%;
+    box-shadow: 3px 5px 11px 0px rgba(207, 207, 207, 0.4);
+    z-index: 1;
+}
+.dropelements a {
+    color: white; 
+    background: black; 
+    padding: 8px; 	
+	 font-family: 'Comfortaa', cursive;
+   	font-size: 20px;
+    display: block;
+}
+.dropelements a:hover {
+	background-color: white;
+	color: black;
+	transition: 0.3s;
+	border: 2px solid #094D74;
+}
+.dropdown:hover .dropelements {
+	display: block;
+}
+.dropdown:hover .dropbutton {
+	color: black; /**/
+  background: white; /**/
+  transition: 0.5s;
+}
+/*Подвал сайта (footer)*/
+footer {
+   width: 100%;
+   height: 550px;
+   background-color: black;
+}
+.foot_block {
+   width: 400px;
+   height: 500px;
+   display: inline-block;
+   margin-left: 55px;
+   margin-top: 25px;
+}
+.foot_block:first-child {
+   position: relative; bottom: 45px;
+}
+.foot_block:last-child {
+   position: relative; top: -215px;
+}
+.foot_content {
+   color: white;
+   font-family: calibri;
+}
+h4 {
+   color: white;
+   font-family: 'Comfortaa', cursive;
+   font-size: 21px;
+}
+#line2 {
+   width: 155px;
+   border: 1px solid white;
+   float: left;
+}
+#line3 {
+   width: 1200px;
+   border: 1px solid gray;
+}
+footer div:last-child {
+   position: relative; top: -75px;
+   margin-bottom: -245px;
+}
+#map {
+   width: 380px;
+   height: 305px;
+   position: relative; top: 0px;
+}
+.icons {
+   width: 30px;
+   margin: 5px;
+}
+.lastinfa {
+   margin-left: 25px;
+   color: white;
+   font-family: calibri;
+}
+.lastinfa:nth-child(2) {
+   margin-left: 180px;
+   
+}
+.lastinfa:nth-child(3) {
+   margin-left: 540px;
+}
+.blue {
+	color: #8F0368;
+}
+
+
+
+#big_img {
+	background: url(../../images/alien.jpg); 
+	width: 100%;
+	height: 820px;
+	background-size: cover;
+}
+div h1 {
+		color: white;
+		text-align: center;
+		font-size: 100px;
+		font-family: century gothic;
+		position: relative; top: 250px;
+}
+.read_more {
+	width: 140px;
+	height: 41px;
+	border-radius: 15px; /*Закругление углов*/
+	background-color: #8F0368; /*Цвет фона*/
+	border: none;
+	color: white;/*Цвет текста*/
+	font-family: calibri;
+	font-size: 16px; /*Размер шрифта*/
+	color: white;/*Цвет текста*/
+	font-family: calibri;
+	font-size: 16px; /*Размер шрифта*/
+	cursor: pointer;
+}
+.read_more:hover {
+	background-color: black;
+	border: 2px solid #8F0368;
+	color: #8F0368;
+	transition: 0.3s;
+}
+#what_space {
+	background: url(../../images/aliens_fon.jpg);
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	margin-top: -90px;
+}
+.word_space {
+	color: white;
+	font-size: 90px;
+	font-family: century gothic;
+	text-align: center;
+	padding-top: 70px;
+}
+#what_space button {
+	position: relative; left: 663px; top: 40px;
+}
+.main_infa {
+	color: white;
+	font-size: 20px;
+	font-family: century gothic;
+	width: 700px;
+	text-align: center;
+	margin-left: 395px;
+}
+.black_fon {
+	width: 100%;
+	height: 500px;
+	background-color: black;
+	color: white;
+	font-family: calibri;
+	font-size: 25px;
+	margin-top: -30px;
+}
+.black_fon img {
+	float: left;
+}
+.black_fon p,h3 {
+	width: 1000px;
+	position: relative; top: 70px;
+	margin-left: 430px;
+}
